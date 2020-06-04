@@ -7,6 +7,6 @@
     "typedoc-plugin-markdown"
   ],
   "out": "docs",
-  "name": "libDemo",
+  "name": "core-math",
   "readme": "none"
 }

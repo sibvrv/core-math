@@ -10,3 +10,5 @@ declare global {
  * Core Math
  */
 export const MATH_VERSION = __LIB_VERSION__;
+
+export * from './Vector2';
