@@ -14,4 +14,5 @@ export declare const MATH_VERSION: {
     stamp: number;
 };
 export * from './Vector2';
+export * from './Vector2Array';
 //# sourceMappingURL=index.d.ts.map
