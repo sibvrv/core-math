@@ -15,4 +15,5 @@ export declare const MATH_VERSION: {
 };
 export * from './Vector2';
 export * from './Vector2Array';
+export * from './Line2';
 //# sourceMappingURL=index.d.ts.map

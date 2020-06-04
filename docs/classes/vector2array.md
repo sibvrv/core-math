@@ -36,7 +36,7 @@ Vector2Array
 
 • **items**: *T[]* = []
 
-*Defined in [Vector2Array.ts:7](https://github.com/sibvrv/core-math/blob/02bc25c/src/Vector2Array.ts#L7)*
+*Defined in [Vector2Array.ts:7](https://github.com/sibvrv/core-math/blob/498c86d/src/Vector2Array.ts#L7)*
 
 ## Methods
 
@@ -44,7 +44,7 @@ Vector2Array
 
 ▸ **clear**(): *void*
 
-*Defined in [Vector2Array.ts:9](https://github.com/sibvrv/core-math/blob/02bc25c/src/Vector2Array.ts#L9)*
+*Defined in [Vector2Array.ts:9](https://github.com/sibvrv/core-math/blob/498c86d/src/Vector2Array.ts#L9)*
 
 **Returns:** *void*
 
@@ -54,7 +54,7 @@ ___
 
 ▸ **delete**(`index`: number): *void*
 
-*Defined in [Vector2Array.ts:41](https://github.com/sibvrv/core-math/blob/02bc25c/src/Vector2Array.ts#L41)*
+*Defined in [Vector2Array.ts:41](https://github.com/sibvrv/core-math/blob/498c86d/src/Vector2Array.ts#L41)*
 
 **Parameters:**
 
@@ -70,7 +70,7 @@ ___
 
 ▸ **empty**(): *boolean*
 
-*Defined in [Vector2Array.ts:13](https://github.com/sibvrv/core-math/blob/02bc25c/src/Vector2Array.ts#L13)*
+*Defined in [Vector2Array.ts:13](https://github.com/sibvrv/core-math/blob/498c86d/src/Vector2Array.ts#L13)*
 
 **Returns:** *boolean*
 
@@ -80,7 +80,7 @@ ___
 
 ▸ **get**(`idx`: number): *undefined | T*
 
-*Defined in [Vector2Array.ts:25](https://github.com/sibvrv/core-math/blob/02bc25c/src/Vector2Array.ts#L25)*
+*Defined in [Vector2Array.ts:25](https://github.com/sibvrv/core-math/blob/498c86d/src/Vector2Array.ts#L25)*
 
 **Parameters:**
 
@@ -96,7 +96,7 @@ ___
 
 ▸ **insert**(`index`: number, `vector`: T): *void*
 
-*Defined in [Vector2Array.ts:37](https://github.com/sibvrv/core-math/blob/02bc25c/src/Vector2Array.ts#L37)*
+*Defined in [Vector2Array.ts:37](https://github.com/sibvrv/core-math/blob/498c86d/src/Vector2Array.ts#L37)*
 
 **Parameters:**
 
@@ -113,7 +113,7 @@ ___
 
 ▸ **pop**(): *void*
 
-*Defined in [Vector2Array.ts:21](https://github.com/sibvrv/core-math/blob/02bc25c/src/Vector2Array.ts#L21)*
+*Defined in [Vector2Array.ts:21](https://github.com/sibvrv/core-math/blob/498c86d/src/Vector2Array.ts#L21)*
 
 **Returns:** *void*
 
@@ -123,7 +123,7 @@ ___
 
 ▸ **push**(`v`: T): *void*
 
-*Defined in [Vector2Array.ts:17](https://github.com/sibvrv/core-math/blob/02bc25c/src/Vector2Array.ts#L17)*
+*Defined in [Vector2Array.ts:17](https://github.com/sibvrv/core-math/blob/498c86d/src/Vector2Array.ts#L17)*
 
 **Parameters:**
 
@@ -139,7 +139,7 @@ ___
 
 ▸ **reverse**(): *void*
 
-*Defined in [Vector2Array.ts:33](https://github.com/sibvrv/core-math/blob/02bc25c/src/Vector2Array.ts#L33)*
+*Defined in [Vector2Array.ts:33](https://github.com/sibvrv/core-math/blob/498c86d/src/Vector2Array.ts#L33)*
 
 **Returns:** *void*
 
@@ -149,6 +149,6 @@ ___
 
 ▸ **size**(): *number*
 
-*Defined in [Vector2Array.ts:29](https://github.com/sibvrv/core-math/blob/02bc25c/src/Vector2Array.ts#L29)*
+*Defined in [Vector2Array.ts:29](https://github.com/sibvrv/core-math/blob/498c86d/src/Vector2Array.ts#L29)*
 
 **Returns:** *number*
