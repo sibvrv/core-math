@@ -1,3 +1,3 @@
 module.exports = {
-  require: ['.mocha_prepare.js', 'ts-node/register'],
+  require: ['ts-node/register', '.mocha_prepare.ts'],
 }
