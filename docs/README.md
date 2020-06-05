@@ -24,7 +24,7 @@
 
 • **MATH_VERSION**: *object* = __LIB_VERSION__
 
-*Defined in [index.ts:12](https://github.com/sibvrv/core-math/blob/498c86d/src/index.ts#L12)*
+*Defined in [index.ts:12](https://github.com/sibvrv/core-math/blob/9b63c4d/src/index.ts#L12)*
 
 Core Math
 

@@ -61,4 +61,18 @@ export class Line2 {
   equal(line: Line2) {
     return line.start.equal(this.start) && line.end.equal(this.end);
   }
+
+  reverse() {
+    [this.start, this.end] = [this.end, this.start];
+  }
+
+  extrude(dir: Vector2) {
+    const {start, end} = this;
+    return [
+      start.clone(),
+      start.clone().add(dir),
+      end.clone().add(dir),
+      end.clone(),
+    ];
+  }
 }

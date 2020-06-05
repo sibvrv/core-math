@@ -11,7 +11,7 @@
     "build:prod": "webpack --mode=production --progress --colors",
     "docs": "typedoc",
     "lint": "tslint -p .",
-    "test": "mocha -r ts-node/register src/**/*.spec.ts"
+    "test": "mocha src/**/*.spec.ts"
   },
   "keywords": [],
   "homepage": "https://www.sibvrv.com",
@@ -25,6 +25,7 @@
     "@types/webpack": "^4.41.17",
     "@types/webpack-merge": "^4.1.5",
     "chai": "^4.2.0",
+    "chai-shallow-deep-equal": "^1.4.6",
     "clean-webpack-plugin": "^3.0.0",
     "mocha": "^7.2.0",
     "ts-loader": "^7.0.5",

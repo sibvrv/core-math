@@ -28,7 +28,9 @@ Line 2D
 * [distance](line2.md#distance)
 * [distanceSq](line2.md#distancesq)
 * [equal](line2.md#equal)
+* [extrude](line2.md#extrude)
 * [getCenter](line2.md#getcenter)
+* [reverse](line2.md#reverse)
 * [set](line2.md#set)
 
 ## Constructors
@@ -37,7 +39,7 @@ Line 2D
 
 \+ **new Line2**(`start`: [Vector2](vector2.md)‹›, `end`: [Vector2](vector2.md)‹›): *[Line2](line2.md)*
 
-*Defined in [Line2.ts:6](https://github.com/sibvrv/core-math/blob/498c86d/src/Line2.ts#L6)*
+*Defined in [Line2.ts:6](https://github.com/sibvrv/core-math/blob/9b63c4d/src/Line2.ts#L6)*
 
 Line2 Constructor
 
@@ -56,7 +58,7 @@ Name | Type | Default |
 
 • **end**: *[Vector2](vector2.md)‹›*
 
-*Defined in [Line2.ts:12](https://github.com/sibvrv/core-math/blob/498c86d/src/Line2.ts#L12)*
+*Defined in [Line2.ts:12](https://github.com/sibvrv/core-math/blob/9b63c4d/src/Line2.ts#L12)*
 
 ___
 
@@ -64,7 +66,7 @@ ___
 
 • **start**: *[Vector2](vector2.md)‹›*
 
-*Defined in [Line2.ts:11](https://github.com/sibvrv/core-math/blob/498c86d/src/Line2.ts#L11)*
+*Defined in [Line2.ts:11](https://github.com/sibvrv/core-math/blob/9b63c4d/src/Line2.ts#L11)*
 
 ## Methods
 
@@ -72,7 +74,7 @@ ___
 
 ▸ **at**(`t`: number): *[Vector2](vector2.md)‹›*
 
-*Defined in [Line2.ts:49](https://github.com/sibvrv/core-math/blob/498c86d/src/Line2.ts#L49)*
+*Defined in [Line2.ts:49](https://github.com/sibvrv/core-math/blob/9b63c4d/src/Line2.ts#L49)*
 
 **Parameters:**
 
@@ -88,7 +90,7 @@ ___
 
 ▸ **clone**(): *[Line2](line2.md)‹›*
 
-*Defined in [Line2.ts:23](https://github.com/sibvrv/core-math/blob/498c86d/src/Line2.ts#L23)*
+*Defined in [Line2.ts:23](https://github.com/sibvrv/core-math/blob/9b63c4d/src/Line2.ts#L23)*
 
 **Returns:** *[Line2](line2.md)‹›*
 
@@ -98,7 +100,7 @@ ___
 
 ▸ **copy**(`line`: [Line2](line2.md)): *this*
 
-*Defined in [Line2.ts:27](https://github.com/sibvrv/core-math/blob/498c86d/src/Line2.ts#L27)*
+*Defined in [Line2.ts:27](https://github.com/sibvrv/core-math/blob/9b63c4d/src/Line2.ts#L27)*
 
 **Parameters:**
 
@@ -114,7 +116,7 @@ ___
 
 ▸ **delta**(): *[Vector2](vector2.md)‹›*
 
-*Defined in [Line2.ts:41](https://github.com/sibvrv/core-math/blob/498c86d/src/Line2.ts#L41)*
+*Defined in [Line2.ts:41](https://github.com/sibvrv/core-math/blob/9b63c4d/src/Line2.ts#L41)*
 
 **Returns:** *[Vector2](vector2.md)‹›*
 
@@ -124,7 +126,7 @@ ___
 
 ▸ **distance**(): *number*
 
-*Defined in [Line2.ts:57](https://github.com/sibvrv/core-math/blob/498c86d/src/Line2.ts#L57)*
+*Defined in [Line2.ts:57](https://github.com/sibvrv/core-math/blob/9b63c4d/src/Line2.ts#L57)*
 
 **Returns:** *number*
 
@@ -134,7 +136,7 @@ ___
 
 ▸ **distanceSq**(): *number*
 
-*Defined in [Line2.ts:53](https://github.com/sibvrv/core-math/blob/498c86d/src/Line2.ts#L53)*
+*Defined in [Line2.ts:53](https://github.com/sibvrv/core-math/blob/9b63c4d/src/Line2.ts#L53)*
 
 **Returns:** *number*
 
@@ -144,7 +146,7 @@ ___
 
 ▸ **equal**(`line`: [Line2](line2.md)): *boolean*
 
-*Defined in [Line2.ts:61](https://github.com/sibvrv/core-math/blob/498c86d/src/Line2.ts#L61)*
+*Defined in [Line2.ts:61](https://github.com/sibvrv/core-math/blob/9b63c4d/src/Line2.ts#L61)*
 
 **Parameters:**
 
@@ -156,13 +158,39 @@ Name | Type |
 
 ___
 
+###  extrude
+
+▸ **extrude**(`dir`: [Vector2](vector2.md)): *[Vector2](vector2.md)‹›[]*
+
+*Defined in [Line2.ts:69](https://github.com/sibvrv/core-math/blob/9b63c4d/src/Line2.ts#L69)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`dir` | [Vector2](vector2.md) |
+
+**Returns:** *[Vector2](vector2.md)‹›[]*
+
+___
+
 ###  getCenter
 
 ▸ **getCenter**(): *[Vector2](vector2.md)‹›*
 
-*Defined in [Line2.ts:33](https://github.com/sibvrv/core-math/blob/498c86d/src/Line2.ts#L33)*
+*Defined in [Line2.ts:33](https://github.com/sibvrv/core-math/blob/9b63c4d/src/Line2.ts#L33)*
 
 **Returns:** *[Vector2](vector2.md)‹›*
+
+___
+
+###  reverse
+
+▸ **reverse**(): *void*
+
+*Defined in [Line2.ts:65](https://github.com/sibvrv/core-math/blob/9b63c4d/src/Line2.ts#L65)*
+
+**Returns:** *void*
 
 ___
 
@@ -170,7 +198,7 @@ ___
 
 ▸ **set**(`start`: [Vector2](vector2.md), `end`: [Vector2](vector2.md)): *this*
 
-*Defined in [Line2.ts:17](https://github.com/sibvrv/core-math/blob/498c86d/src/Line2.ts#L17)*
+*Defined in [Line2.ts:17](https://github.com/sibvrv/core-math/blob/9b63c4d/src/Line2.ts#L17)*
 
 **Parameters:**
 

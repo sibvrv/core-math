@@ -18,5 +18,7 @@ export declare class Line2 {
     distanceSq(): number;
     distance(): number;
     equal(line: Line2): boolean;
+    reverse(): void;
+    extrude(dir: Vector2): Vector2[];
 }
 //# sourceMappingURL=Line2.d.ts.map
