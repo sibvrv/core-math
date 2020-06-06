@@ -18,4 +18,5 @@ export * from './MathUtils';
 export * from './Vector2';
 export * from './Vector2Array';
 export * from './Line2';
+export * from './ShapeUtils';
 //# sourceMappingURL=index.d.ts.map
