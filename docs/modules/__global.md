@@ -14,7 +14,7 @@
 
 • **__LIB_VERSION__**: *object*
 
-*Defined in [index.ts:2](https://github.com/sibvrv/core-math/blob/9b63c4d/src/index.ts#L2)*
+*Defined in [index.ts:2](https://github.com/sibvrv/core-math/blob/1c4fb6a/src/index.ts#L2)*
 
 #### Type declaration:
 

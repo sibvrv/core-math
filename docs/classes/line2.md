@@ -25,13 +25,14 @@ Line 2D
 * [clone](line2.md#clone)
 * [copy](line2.md#copy)
 * [delta](line2.md#delta)
-* [distance](line2.md#distance)
-* [distanceSq](line2.md#distancesq)
 * [equal](line2.md#equal)
 * [extrude](line2.md#extrude)
 * [getCenter](line2.md#getcenter)
+* [length](line2.md#length)
 * [reverse](line2.md#reverse)
 * [set](line2.md#set)
+* [squareLength](line2.md#squarelength)
+* [directedLine](line2.md#static-directedline)
 
 ## Constructors
 
@@ -39,7 +40,7 @@ Line 2D
 
 \+ **new Line2**(`start`: [Vector2](vector2.md)‹›, `end`: [Vector2](vector2.md)‹›): *[Line2](line2.md)*
 
-*Defined in [Line2.ts:6](https://github.com/sibvrv/core-math/blob/9b63c4d/src/Line2.ts#L6)*
+*Defined in [Line2.ts:6](https://github.com/sibvrv/core-math/blob/1c4fb6a/src/Line2.ts#L6)*
 
 Line2 Constructor
 
@@ -58,7 +59,7 @@ Name | Type | Default |
 
 • **end**: *[Vector2](vector2.md)‹›*
 
-*Defined in [Line2.ts:12](https://github.com/sibvrv/core-math/blob/9b63c4d/src/Line2.ts#L12)*
+*Defined in [Line2.ts:12](https://github.com/sibvrv/core-math/blob/1c4fb6a/src/Line2.ts#L12)*
 
 ___
 
@@ -66,7 +67,7 @@ ___
 
 • **start**: *[Vector2](vector2.md)‹›*
 
-*Defined in [Line2.ts:11](https://github.com/sibvrv/core-math/blob/9b63c4d/src/Line2.ts#L11)*
+*Defined in [Line2.ts:11](https://github.com/sibvrv/core-math/blob/1c4fb6a/src/Line2.ts#L11)*
 
 ## Methods
 
@@ -74,7 +75,7 @@ ___
 
 ▸ **at**(`t`: number): *[Vector2](vector2.md)‹›*
 
-*Defined in [Line2.ts:49](https://github.com/sibvrv/core-math/blob/9b63c4d/src/Line2.ts#L49)*
+*Defined in [Line2.ts:59](https://github.com/sibvrv/core-math/blob/1c4fb6a/src/Line2.ts#L59)*
 
 **Parameters:**
 
@@ -90,7 +91,7 @@ ___
 
 ▸ **clone**(): *[Line2](line2.md)‹›*
 
-*Defined in [Line2.ts:23](https://github.com/sibvrv/core-math/blob/9b63c4d/src/Line2.ts#L23)*
+*Defined in [Line2.ts:33](https://github.com/sibvrv/core-math/blob/1c4fb6a/src/Line2.ts#L33)*
 
 **Returns:** *[Line2](line2.md)‹›*
 
@@ -100,7 +101,7 @@ ___
 
 ▸ **copy**(`line`: [Line2](line2.md)): *this*
 
-*Defined in [Line2.ts:27](https://github.com/sibvrv/core-math/blob/9b63c4d/src/Line2.ts#L27)*
+*Defined in [Line2.ts:37](https://github.com/sibvrv/core-math/blob/1c4fb6a/src/Line2.ts#L37)*
 
 **Parameters:**
 
@@ -116,29 +117,9 @@ ___
 
 ▸ **delta**(): *[Vector2](vector2.md)‹›*
 
-*Defined in [Line2.ts:41](https://github.com/sibvrv/core-math/blob/9b63c4d/src/Line2.ts#L41)*
+*Defined in [Line2.ts:51](https://github.com/sibvrv/core-math/blob/1c4fb6a/src/Line2.ts#L51)*
 
 **Returns:** *[Vector2](vector2.md)‹›*
-
-___
-
-###  distance
-
-▸ **distance**(): *number*
-
-*Defined in [Line2.ts:57](https://github.com/sibvrv/core-math/blob/9b63c4d/src/Line2.ts#L57)*
-
-**Returns:** *number*
-
-___
-
-###  distanceSq
-
-▸ **distanceSq**(): *number*
-
-*Defined in [Line2.ts:53](https://github.com/sibvrv/core-math/blob/9b63c4d/src/Line2.ts#L53)*
-
-**Returns:** *number*
 
 ___
 
@@ -146,13 +127,15 @@ ___
 
 ▸ **equal**(`line`: [Line2](line2.md)): *boolean*
 
-*Defined in [Line2.ts:61](https://github.com/sibvrv/core-math/blob/9b63c4d/src/Line2.ts#L61)*
+*Defined in [Line2.ts:75](https://github.com/sibvrv/core-math/blob/1c4fb6a/src/Line2.ts#L75)*
+
+Is Lines Equal
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`line` | [Line2](line2.md) |
+Name | Type | Description |
+------ | ------ | ------ |
+`line` | [Line2](line2.md) |   |
 
 **Returns:** *boolean*
 
@@ -160,15 +143,17 @@ ___
 
 ###  extrude
 
-▸ **extrude**(`dir`: [Vector2](vector2.md)): *[Vector2](vector2.md)‹›[]*
+▸ **extrude**(`direction`: [Vector2](vector2.md)): *[Vector2](vector2.md)‹›[]*
 
-*Defined in [Line2.ts:69](https://github.com/sibvrv/core-math/blob/9b63c4d/src/Line2.ts#L69)*
+*Defined in [Line2.ts:90](https://github.com/sibvrv/core-math/blob/1c4fb6a/src/Line2.ts#L90)*
+
+Extrude Line
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`dir` | [Vector2](vector2.md) |
+Name | Type | Description |
+------ | ------ | ------ |
+`direction` | [Vector2](vector2.md) |   |
 
 **Returns:** *[Vector2](vector2.md)‹›[]*
 
@@ -178,9 +163,19 @@ ___
 
 ▸ **getCenter**(): *[Vector2](vector2.md)‹›*
 
-*Defined in [Line2.ts:33](https://github.com/sibvrv/core-math/blob/9b63c4d/src/Line2.ts#L33)*
+*Defined in [Line2.ts:43](https://github.com/sibvrv/core-math/blob/1c4fb6a/src/Line2.ts#L43)*
 
 **Returns:** *[Vector2](vector2.md)‹›*
+
+___
+
+###  length
+
+▸ **length**(): *number*
+
+*Defined in [Line2.ts:67](https://github.com/sibvrv/core-math/blob/1c4fb6a/src/Line2.ts#L67)*
+
+**Returns:** *number*
 
 ___
 
@@ -188,7 +183,9 @@ ___
 
 ▸ **reverse**(): *void*
 
-*Defined in [Line2.ts:65](https://github.com/sibvrv/core-math/blob/9b63c4d/src/Line2.ts#L65)*
+*Defined in [Line2.ts:82](https://github.com/sibvrv/core-math/blob/1c4fb6a/src/Line2.ts#L82)*
+
+Reverse
 
 **Returns:** *void*
 
@@ -198,7 +195,7 @@ ___
 
 ▸ **set**(`start`: [Vector2](vector2.md), `end`: [Vector2](vector2.md)): *this*
 
-*Defined in [Line2.ts:17](https://github.com/sibvrv/core-math/blob/9b63c4d/src/Line2.ts#L17)*
+*Defined in [Line2.ts:27](https://github.com/sibvrv/core-math/blob/1c4fb6a/src/Line2.ts#L27)*
 
 **Parameters:**
 
@@ -208,3 +205,32 @@ Name | Type |
 `end` | [Vector2](vector2.md) |
 
 **Returns:** *this*
+
+___
+
+###  squareLength
+
+▸ **squareLength**(): *number*
+
+*Defined in [Line2.ts:63](https://github.com/sibvrv/core-math/blob/1c4fb6a/src/Line2.ts#L63)*
+
+**Returns:** *number*
+
+___
+
+### `Static` directedLine
+
+▸ **directedLine**(`point`: [Vector2](vector2.md), `direction`: [Vector2](vector2.md)): *[Line2](line2.md)‹›*
+
+*Defined in [Line2.ts:23](https://github.com/sibvrv/core-math/blob/1c4fb6a/src/Line2.ts#L23)*
+
+Directed Line
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`point` | [Vector2](vector2.md) |
+`direction` | [Vector2](vector2.md) |
+
+**Returns:** *[Line2](line2.md)‹›*

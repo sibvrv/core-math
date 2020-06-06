@@ -14,6 +14,16 @@ export class Line2 {
 
   }
 
+  /**
+   * Directed Line
+   * @param point
+   * @param direction
+   * @return {Line2}
+   */
+  static directedLine(point: Vector2, direction: Vector2) {
+    return new Line2(point, point.clone().add(direction));
+  }
+
   set(start: Vector2, end: Vector2) {
     this.start.copy(start);
     this.end.copy(end);
@@ -50,28 +60,39 @@ export class Line2 {
     return this.delta().mulf(t).add(this.start);
   }
 
-  distanceSq() {
+  squareLength() {
     return this.start.distanceSq(this.end);
   }
 
-  distance() {
+  length() {
     return this.start.distance(this.end);
   }
 
+  /**
+   * Is Lines Equal
+   * @param line
+   */
   equal(line: Line2) {
     return line.start.equal(this.start) && line.end.equal(this.end);
   }
 
+  /**
+   * Reverse
+   */
   reverse() {
     [this.start, this.end] = [this.end, this.start];
   }
 
-  extrude(dir: Vector2) {
+  /**
+   * Extrude Line
+   * @param direction
+   */
+  extrude(direction: Vector2) {
     const {start, end} = this;
     return [
       start.clone(),
-      start.clone().add(dir),
-      end.clone().add(dir),
+      start.clone().add(direction),
+      end.clone().add(direction),
       end.clone(),
     ];
   }
