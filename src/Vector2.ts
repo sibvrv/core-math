@@ -40,6 +40,10 @@ export class Vector2 {
     return this;
   }
 
+  dot(v: Vector2) {
+    return this.x * v.x + this.y * v.y;
+  }
+
   add(v: Vector2) {
     this.x += v.x;
     this.y += v.y;
