@@ -6,6 +6,7 @@
   "plugin": [
     "typedoc-plugin-markdown"
   ],
+  "gitRevision": "master",
   "out": "docs",
   "name": "core-math",
   "readme": "none"
