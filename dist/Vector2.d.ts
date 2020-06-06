@@ -26,6 +26,7 @@ export declare class Vector2 {
      * @param y
      */
     set(x: number, y: number): this;
+    dot(v: Vector2): number;
     add(v: Vector2): this;
     sub(v: Vector2): this;
     mul(v: Vector2): this;

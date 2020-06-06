@@ -19,5 +19,7 @@ export * from './Vector2';
 export * from './Vector2Array';
 export * from './Line2';
 export * from './ShapeUtils';
+export * from './AABB2';
+export * from './OBB2';
 export * from './Intersection/LineLineIntersection';
 //# sourceMappingURL=index.d.ts.map

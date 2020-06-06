@@ -10,7 +10,9 @@
 
 ### Classes
 
+* [AABB2](classes/aabb2.md)
 * [Line2](classes/line2.md)
+* [OBB2](classes/obb2.md)
 * [Vector2](classes/vector2.md)
 * [Vector2Array](classes/vector2array.md)
 
@@ -37,6 +39,7 @@
 * [clamp](README.md#const-clamp)
 * [floorPowerOfTwo](README.md#const-floorpoweroftwo)
 * [isClockwise](README.md#const-isclockwise)
+* [isPointInPoly](README.md#ispointinpoly)
 * [isPowerOfTwo](README.md#const-ispoweroftwo)
 * [lerp](README.md#const-lerp)
 * [polygonArea](README.md#polygonarea)
@@ -164,7 +167,7 @@ ___
 
 ▸ **LineLineIntersection**(`x1`: number, `y1`: number, `x2`: number, `y2`: number, `x3`: number, `y3`: number, `x4`: number, `y4`: number): *false | object*
 
-*Defined in [Intersection/LineLineIntersection.ts:16](https://github.com/sibvrv/core-math/blob/master/src/Intersection/LineLineIntersection.ts#L16)*
+*Defined in [Intersection/LineLineIntersection.ts:15](https://github.com/sibvrv/core-math/blob/master/src/Intersection/LineLineIntersection.ts#L15)*
 
 Line-Line intersection
 
@@ -254,6 +257,27 @@ Returns true if the sum of signed distances is greater than zero, which can be u
 Name | Type | Description |
 ------ | ------ | ------ |
 `points` | [Vector2](classes/vector2.md)[] |   |
+
+**Returns:** *boolean*
+
+___
+
+###  isPointInPoly
+
+▸ **isPointInPoly**(`x`: number, `y`: number, `vertices`: [Vector2](classes/vector2.md)[]): *boolean*
+
+*Defined in [ShapeUtils.ts:31](https://github.com/sibvrv/core-math/blob/master/src/ShapeUtils.ts#L31)*
+
+Is Point In Poly
+ray-casting algorithm based on http://www.ecse.rpi.edu/Homepages/wrf/Research/Short_Notes/pnpoly.html
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`x` | number | - |
+`y` | number | - |
+`vertices` | [Vector2](classes/vector2.md)[] |   |
 
 **Returns:** *boolean*
 

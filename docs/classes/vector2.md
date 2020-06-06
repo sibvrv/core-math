@@ -30,6 +30,7 @@ Vector 2D
 * [distance](vector2.md#distance)
 * [distanceSq](vector2.md#distancesq)
 * [divf](vector2.md#divf)
+* [dot](vector2.md#dot)
 * [equal](vector2.md#equal)
 * [fromAngle](vector2.md#fromangle)
 * [length](vector2.md#length)
@@ -86,7 +87,7 @@ ___
 
 ▸ **abs**(): *this*
 
-*Defined in [Vector2.ts:83](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L83)*
+*Defined in [Vector2.ts:87](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L87)*
 
 **Returns:** *this*
 
@@ -96,7 +97,7 @@ ___
 
 ▸ **add**(`v`: [Vector2](vector2.md)): *this*
 
-*Defined in [Vector2.ts:43](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L43)*
+*Defined in [Vector2.ts:47](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L47)*
 
 **Parameters:**
 
@@ -142,7 +143,7 @@ ___
 
 ▸ **cross**(`v`: [Vector2](vector2.md)): *number*
 
-*Defined in [Vector2.ts:100](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L100)*
+*Defined in [Vector2.ts:104](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L104)*
 
 **Parameters:**
 
@@ -158,7 +159,7 @@ ___
 
 ▸ **crossVector**(): *this*
 
-*Defined in [Vector2.ts:93](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L93)*
+*Defined in [Vector2.ts:97](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L97)*
 
 **Returns:** *this*
 
@@ -168,7 +169,7 @@ ___
 
 ▸ **distance**(`v`: [Vector2](vector2.md)): *number*
 
-*Defined in [Vector2.ts:128](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L128)*
+*Defined in [Vector2.ts:132](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L132)*
 
 Distance between points
 
@@ -186,7 +187,7 @@ ___
 
 ▸ **distanceSq**(`v`: [Vector2](vector2.md)): *number*
 
-*Defined in [Vector2.ts:138](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L138)*
+*Defined in [Vector2.ts:142](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L142)*
 
 Square distance between points
 
@@ -204,7 +205,7 @@ ___
 
 ▸ **divf**(`v`: number): *this*
 
-*Defined in [Vector2.ts:61](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L61)*
+*Defined in [Vector2.ts:65](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L65)*
 
 **Parameters:**
 
@@ -216,11 +217,27 @@ Name | Type |
 
 ___
 
+###  dot
+
+▸ **dot**(`v`: [Vector2](vector2.md)): *number*
+
+*Defined in [Vector2.ts:43](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L43)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`v` | [Vector2](vector2.md) |
+
+**Returns:** *number*
+
+___
+
 ###  equal
 
 ▸ **equal**(`v`: [Vector2](vector2.md)): *boolean*
 
-*Defined in [Vector2.ts:89](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L89)*
+*Defined in [Vector2.ts:93](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L93)*
 
 **Parameters:**
 
@@ -236,7 +253,7 @@ ___
 
 ▸ **fromAngle**(`a`: number): *this*
 
-*Defined in [Vector2.ts:148](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L148)*
+*Defined in [Vector2.ts:152](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L152)*
 
 Get Vector From Angle
 
@@ -254,7 +271,7 @@ ___
 
 ▸ **length**(): *number*
 
-*Defined in [Vector2.ts:112](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L112)*
+*Defined in [Vector2.ts:116](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L116)*
 
 **Returns:** *number*
 
@@ -264,7 +281,7 @@ ___
 
 ▸ **lengthSq**(): *number*
 
-*Defined in [Vector2.ts:118](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L118)*
+*Defined in [Vector2.ts:122](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L122)*
 
 **Returns:** *number*
 
@@ -274,7 +291,7 @@ ___
 
 ▸ **mid**(`v`: [Vector2](vector2.md)): *[Vector2](vector2.md)‹›*
 
-*Defined in [Vector2.ts:73](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L73)*
+*Defined in [Vector2.ts:77](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L77)*
 
 **Parameters:**
 
@@ -290,7 +307,7 @@ ___
 
 ▸ **mul**(`v`: [Vector2](vector2.md)): *this*
 
-*Defined in [Vector2.ts:55](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L55)*
+*Defined in [Vector2.ts:59](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L59)*
 
 **Parameters:**
 
@@ -306,7 +323,7 @@ ___
 
 ▸ **mulf**(`v`: number): *this*
 
-*Defined in [Vector2.ts:67](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L67)*
+*Defined in [Vector2.ts:71](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L71)*
 
 **Parameters:**
 
@@ -322,7 +339,7 @@ ___
 
 ▸ **normalize**(): *this*
 
-*Defined in [Vector2.ts:104](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L104)*
+*Defined in [Vector2.ts:108](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L108)*
 
 **Returns:** *this*
 
@@ -332,7 +349,7 @@ ___
 
 ▸ **rotate**(`angle`: number): *this*
 
-*Defined in [Vector2.ts:169](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L169)*
+*Defined in [Vector2.ts:173](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L173)*
 
 Rotate vector by angle
 
@@ -350,7 +367,7 @@ ___
 
 ▸ **rotateAround**(`center`: [Vector2](vector2.md), `angle`: number): *this*
 
-*Defined in [Vector2.ts:186](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L186)*
+*Defined in [Vector2.ts:190](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L190)*
 
 Rotate vector around point by angle
 
@@ -369,7 +386,7 @@ ___
 
 ▸ **round**(): *this*
 
-*Defined in [Vector2.ts:77](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L77)*
+*Defined in [Vector2.ts:81](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L81)*
 
 **Returns:** *this*
 
@@ -398,7 +415,7 @@ ___
 
 ▸ **sub**(`v`: [Vector2](vector2.md)): *this*
 
-*Defined in [Vector2.ts:49](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L49)*
+*Defined in [Vector2.ts:53](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L53)*
 
 **Parameters:**
 
@@ -414,7 +431,7 @@ ___
 
 ▸ **toAngle**(): *number*
 
-*Defined in [Vector2.ts:157](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L157)*
+*Defined in [Vector2.ts:161](https://github.com/sibvrv/core-math/blob/master/src/Vector2.ts#L161)*
 
 Computes the angle in radians
 
