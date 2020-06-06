@@ -1,5 +1,4 @@
 import {Vector2} from '../Vector2';
-import {Line2} from '../Line2';
 
 /**
  * Line-Line intersection
