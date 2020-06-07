@@ -9,5 +9,6 @@
   "gitRevision": "master",
   "out": "docs",
   "name": "core-math",
-  "readme": "none"
+  "readme": "none",
+  "stripInternal": true
 }

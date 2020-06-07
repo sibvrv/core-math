@@ -1,9 +1,20 @@
 import {Vector2} from '../Vector2';
 
+/**
+ * @internal
+ * @param a
+ * @param b
+ */
 const pointsSortFn = (a: Vector2, b: Vector2) => {
   return a.x !== b.x ? a.x - b.x : a.y - b.y;
 };
 
+/**
+ * @internal
+ * @param a
+ * @param b
+ * @param c
+ */
 function removeMiddle(a: Vector2, b: Vector2, c: Vector2) {
   const cross = (a.x - b.x) * (c.y - b.y) - (a.y - b.y) * (c.x - b.x);
   const dot = (a.x - b.x) * (c.x - b.x) + (a.y - b.y) * (c.y - b.y);

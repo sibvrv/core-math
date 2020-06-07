@@ -1,3 +1,6 @@
+/**
+ * @internal
+ */
 declare global {
     var __LIB_VERSION__: {
         build: string;

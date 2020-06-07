@@ -4,10 +4,6 @@
 
 ## Index
 
-### Namespaces
-
-* [__global](modules/__global.md)
-
 ### Classes
 
 * [AABB2](classes/aabb2.md)
@@ -38,6 +34,7 @@
 * [LineLineIntersection](README.md#linelineintersection)
 * [ceilPowerOfTwo](README.md#const-ceilpoweroftwo)
 * [clamp](README.md#const-clamp)
+* [convexHull2](README.md#convexhull2)
 * [floorPowerOfTwo](README.md#const-floorpoweroftwo)
 * [isClockwise](README.md#const-isclockwise)
 * [isPointInPoly](README.md#ispointinpoly)
@@ -69,7 +66,7 @@ ___
 
 • **MATH_VERSION**: *object* = __LIB_VERSION__
 
-*Defined in [index.ts:12](https://github.com/sibvrv/core-math/blob/master/src/index.ts#L12)*
+*Defined in [index.ts:15](https://github.com/sibvrv/core-math/blob/master/src/index.ts#L15)*
 
 Core Math
 
@@ -225,6 +222,24 @@ Name | Type | Description |
 `max` | number |   |
 
 **Returns:** *number*
+
+___
+
+###  convexHull2
+
+▸ **convexHull2**(`inPoints`: [Vector2](classes/vector2.md)[]): *[Vector2](classes/vector2.md)‹›[]*
+
+*Defined in [ShapeUtils/convexHull2.ts:28](https://github.com/sibvrv/core-math/blob/master/src/ShapeUtils/convexHull2.ts#L28)*
+
+Convex Hull 2D
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`inPoints` | [Vector2](classes/vector2.md)[] |   |
+
+**Returns:** *[Vector2](classes/vector2.md)‹›[]*
 
 ___
 
