@@ -1,6 +1,6 @@
+import {Vector2} from '../Vector2';
+import {polygonArea} from './polygonArea';
 import {expect} from 'chai';
-import {isClockwise, polygonArea} from './ShapeUtils';
-import {Vector2} from './Vector2';
 
 describe('Shape Utils', () => {
 
@@ -24,13 +24,5 @@ describe('Shape Utils', () => {
 
     const ccw = polygonArea(polyCCW);
     expect(ccw).to.be.eq(-0.5);
-  });
-
-  it('is clockwise', () => {
-    const cw = isClockwise(polyCW);
-    expect(cw).to.be.eq(true, 'should be clockwise');
-
-    const ccw = isClockwise(polyCCW);
-    expect(ccw).to.be.eq(false, 'should be counter-clockwise');
   });
 });
