@@ -1,8 +1,8 @@
-[core-math](../README.md) › [Vector2Array](vector2array.md)
+[core-math](../README.md) › [ArrayContainer](arraycontainer.md)
 
-# Class: Vector2Array ‹**T**›
+# Class: ArrayContainer ‹**T**›
 
-Vector2 Array
+Array Container
 
 ## Type parameters
 
@@ -10,35 +10,33 @@ Vector2 Array
 
 ## Hierarchy
 
-* [ArrayContainer](arraycontainer.md)‹T›
+* **ArrayContainer**
 
-  ↳ **Vector2Array**
+  ↳ [Vector2Array](vector2array.md)
 
 ## Index
 
 ### Properties
 
-* [items](vector2array.md#items)
+* [items](arraycontainer.md#items)
 
 ### Methods
 
-* [clear](vector2array.md#clear)
-* [delete](vector2array.md#delete)
-* [empty](vector2array.md#empty)
-* [get](vector2array.md#get)
-* [insert](vector2array.md#insert)
-* [pop](vector2array.md#pop)
-* [push](vector2array.md#push)
-* [reverse](vector2array.md#reverse)
-* [size](vector2array.md#size)
+* [clear](arraycontainer.md#clear)
+* [delete](arraycontainer.md#delete)
+* [empty](arraycontainer.md#empty)
+* [get](arraycontainer.md#get)
+* [insert](arraycontainer.md#insert)
+* [pop](arraycontainer.md#pop)
+* [push](arraycontainer.md#push)
+* [reverse](arraycontainer.md#reverse)
+* [size](arraycontainer.md#size)
 
 ## Properties
 
 ###  items
 
 • **items**: *T[]* = []
-
-*Inherited from [ArrayContainer](arraycontainer.md).[items](arraycontainer.md#items)*
 
 *Defined in [Helpers/ArrayContainer.ts:5](https://github.com/sibvrv/core-math/blob/master/src/Helpers/ArrayContainer.ts#L5)*
 
@@ -47,8 +45,6 @@ Vector2 Array
 ###  clear
 
 ▸ **clear**(): *void*
-
-*Inherited from [ArrayContainer](arraycontainer.md).[clear](arraycontainer.md#clear)*
 
 *Defined in [Helpers/ArrayContainer.ts:7](https://github.com/sibvrv/core-math/blob/master/src/Helpers/ArrayContainer.ts#L7)*
 
@@ -59,8 +55,6 @@ ___
 ###  delete
 
 ▸ **delete**(`index`: number): *void*
-
-*Inherited from [ArrayContainer](arraycontainer.md).[delete](arraycontainer.md#delete)*
 
 *Defined in [Helpers/ArrayContainer.ts:39](https://github.com/sibvrv/core-math/blob/master/src/Helpers/ArrayContainer.ts#L39)*
 
@@ -78,8 +72,6 @@ ___
 
 ▸ **empty**(): *boolean*
 
-*Inherited from [ArrayContainer](arraycontainer.md).[empty](arraycontainer.md#empty)*
-
 *Defined in [Helpers/ArrayContainer.ts:11](https://github.com/sibvrv/core-math/blob/master/src/Helpers/ArrayContainer.ts#L11)*
 
 **Returns:** *boolean*
@@ -89,8 +81,6 @@ ___
 ###  get
 
 ▸ **get**(`idx`: number): *undefined | T*
-
-*Inherited from [ArrayContainer](arraycontainer.md).[get](arraycontainer.md#get)*
 
 *Defined in [Helpers/ArrayContainer.ts:23](https://github.com/sibvrv/core-math/blob/master/src/Helpers/ArrayContainer.ts#L23)*
 
@@ -107,8 +97,6 @@ ___
 ###  insert
 
 ▸ **insert**(`index`: number, `vector`: T): *void*
-
-*Inherited from [ArrayContainer](arraycontainer.md).[insert](arraycontainer.md#insert)*
 
 *Defined in [Helpers/ArrayContainer.ts:35](https://github.com/sibvrv/core-math/blob/master/src/Helpers/ArrayContainer.ts#L35)*
 
@@ -127,8 +115,6 @@ ___
 
 ▸ **pop**(): *void*
 
-*Inherited from [ArrayContainer](arraycontainer.md).[pop](arraycontainer.md#pop)*
-
 *Defined in [Helpers/ArrayContainer.ts:19](https://github.com/sibvrv/core-math/blob/master/src/Helpers/ArrayContainer.ts#L19)*
 
 **Returns:** *void*
@@ -138,8 +124,6 @@ ___
 ###  push
 
 ▸ **push**(`v`: T): *void*
-
-*Inherited from [ArrayContainer](arraycontainer.md).[push](arraycontainer.md#push)*
 
 *Defined in [Helpers/ArrayContainer.ts:15](https://github.com/sibvrv/core-math/blob/master/src/Helpers/ArrayContainer.ts#L15)*
 
@@ -157,8 +141,6 @@ ___
 
 ▸ **reverse**(): *void*
 
-*Inherited from [ArrayContainer](arraycontainer.md).[reverse](arraycontainer.md#reverse)*
-
 *Defined in [Helpers/ArrayContainer.ts:31](https://github.com/sibvrv/core-math/blob/master/src/Helpers/ArrayContainer.ts#L31)*
 
 **Returns:** *void*
@@ -168,8 +150,6 @@ ___
 ###  size
 
 ▸ **size**(): *number*
-
-*Inherited from [ArrayContainer](arraycontainer.md).[size](arraycontainer.md#size)*
 
 *Defined in [Helpers/ArrayContainer.ts:27](https://github.com/sibvrv/core-math/blob/master/src/Helpers/ArrayContainer.ts#L27)*
 

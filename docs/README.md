@@ -11,6 +11,7 @@
 ### Classes
 
 * [AABB2](classes/aabb2.md)
+* [ArrayContainer](classes/arraycontainer.md)
 * [Line2](classes/line2.md)
 * [OBB2](classes/obb2.md)
 * [Vector2](classes/vector2.md)
@@ -43,6 +44,7 @@
 * [isPowerOfTwo](README.md#const-ispoweroftwo)
 * [lerp](README.md#const-lerp)
 * [polygonArea](README.md#polygonarea)
+* [polygonOffset](README.md#polygonoffset)
 * [smoothStep](README.md#smoothstep)
 
 ## Variables
@@ -248,7 +250,7 @@ ___
 
 ▸ **isClockwise**(`points`: [Vector2](classes/vector2.md)[]): *boolean*
 
-*Defined in [ShapeUtils.ts:22](https://github.com/sibvrv/core-math/blob/master/src/ShapeUtils.ts#L22)*
+*Defined in [ShapeUtils/isClockwise.ts:8](https://github.com/sibvrv/core-math/blob/master/src/ShapeUtils/isClockwise.ts#L8)*
 
 Returns true if the sum of signed distances is greater than zero, which can be used as a quick test for convex polygon orientation
 
@@ -266,7 +268,7 @@ ___
 
 ▸ **isPointInPoly**(`x`: number, `y`: number, `vertices`: [Vector2](classes/vector2.md)[]): *boolean*
 
-*Defined in [ShapeUtils.ts:31](https://github.com/sibvrv/core-math/blob/master/src/ShapeUtils.ts#L31)*
+*Defined in [ShapeUtils/isPointInPoly.ts:10](https://github.com/sibvrv/core-math/blob/master/src/ShapeUtils/isPointInPoly.ts#L10)*
 
 Is Point In Poly
 ray-casting algorithm based on http://www.ecse.rpi.edu/Homepages/wrf/Research/Short_Notes/pnpoly.html
@@ -325,7 +327,7 @@ ___
 
 ▸ **polygonArea**(`vertices`: [Vector2](classes/vector2.md)[]): *number*
 
-*Defined in [ShapeUtils.ts:7](https://github.com/sibvrv/core-math/blob/master/src/ShapeUtils.ts#L7)*
+*Defined in [ShapeUtils/polygonArea.ts:7](https://github.com/sibvrv/core-math/blob/master/src/ShapeUtils/polygonArea.ts#L7)*
 
 Polygon Area
 
@@ -336,6 +338,25 @@ Name | Type | Description |
 `vertices` | [Vector2](classes/vector2.md)[] |   |
 
 **Returns:** *number*
+
+___
+
+###  polygonOffset
+
+▸ **polygonOffset**(`vertices`: [Vector2](classes/vector2.md)[], `dist`: number): *[Vector2](classes/vector2.md)‹›[]*
+
+*Defined in [ShapeUtils/polygonOffset.ts:10](https://github.com/sibvrv/core-math/blob/master/src/ShapeUtils/polygonOffset.ts#L10)*
+
+Polygon Offset
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`vertices` | [Vector2](classes/vector2.md)[] | - |
+`dist` | number |   |
+
+**Returns:** *[Vector2](classes/vector2.md)‹›[]*
 
 ___
 

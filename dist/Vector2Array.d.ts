@@ -1,17 +1,8 @@
 import { Vector2 } from './Vector2';
+import { ArrayContainer } from './Helpers/ArrayContainer';
 /**
- * Vector2Array
+ * Vector2 Array
  */
-export declare class Vector2Array<T = Vector2> {
-    items: T[];
-    clear(): void;
-    empty(): boolean;
-    push(v: T): void;
-    pop(): void;
-    get(idx: number): T | undefined;
-    size(): number;
-    reverse(): void;
-    insert(index: number, vector: T): void;
-    delete(index: number): void;
+export declare class Vector2Array<T = Vector2> extends ArrayContainer<T> {
 }
 //# sourceMappingURL=Vector2Array.d.ts.map
