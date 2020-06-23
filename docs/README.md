@@ -35,11 +35,24 @@
 * [ceilPowerOfTwo](README.md#const-ceilpoweroftwo)
 * [clamp](README.md#const-clamp)
 * [convexHull2](README.md#convexhull2)
+* [easeInCubic](README.md#const-easeincubic)
+* [easeInOutCubic](README.md#const-easeinoutcubic)
+* [easeInOutQuad](README.md#const-easeinoutquad)
+* [easeInOutQuart](README.md#const-easeinoutquart)
+* [easeInOutQuint](README.md#const-easeinoutquint)
+* [easeInQuad](README.md#const-easeinquad)
+* [easeInQuart](README.md#const-easeinquart)
+* [easeInQuint](README.md#const-easeinquint)
+* [easeOutCubic](README.md#const-easeoutcubic)
+* [easeOutQuad](README.md#const-easeoutquad)
+* [easeOutQuart](README.md#const-easeoutquart)
+* [easeOutQuint](README.md#const-easeoutquint)
 * [floorPowerOfTwo](README.md#const-floorpoweroftwo)
 * [isClockwise](README.md#const-isclockwise)
 * [isPointInPoly](README.md#ispointinpoly)
 * [isPowerOfTwo](README.md#const-ispoweroftwo)
 * [lerp](README.md#const-lerp)
+* [linear](README.md#const-linear)
 * [polygonArea](README.md#polygonarea)
 * [polygonOffset](README.md#polygonoffset)
 * [smoothStep](README.md#smoothstep)
@@ -243,6 +256,222 @@ Name | Type | Description |
 
 ___
 
+### `Const` easeInCubic
+
+▸ **easeInCubic**(`t`: number): *number*
+
+*Defined in [Easing.ts:29](https://github.com/sibvrv/core-math/blob/master/src/Easing.ts#L29)*
+
+Accelerating from zero velocity
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`t` | number |   |
+
+**Returns:** *number*
+
+___
+
+### `Const` easeInOutCubic
+
+▸ **easeInOutCubic**(`t`: number): *number*
+
+*Defined in [Easing.ts:41](https://github.com/sibvrv/core-math/blob/master/src/Easing.ts#L41)*
+
+Acceleration until halfway, then deceleration
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`t` | number |   |
+
+**Returns:** *number*
+
+___
+
+### `Const` easeInOutQuad
+
+▸ **easeInOutQuad**(`t`: number): *number*
+
+*Defined in [Easing.ts:23](https://github.com/sibvrv/core-math/blob/master/src/Easing.ts#L23)*
+
+Acceleration until halfway, then deceleration
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`t` | number |   |
+
+**Returns:** *number*
+
+___
+
+### `Const` easeInOutQuart
+
+▸ **easeInOutQuart**(`t`: number): *number*
+
+*Defined in [Easing.ts:59](https://github.com/sibvrv/core-math/blob/master/src/Easing.ts#L59)*
+
+Acceleration until halfway, then deceleration
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`t` | number |   |
+
+**Returns:** *number*
+
+___
+
+### `Const` easeInOutQuint
+
+▸ **easeInOutQuint**(`t`: number): *number*
+
+*Defined in [Easing.ts:77](https://github.com/sibvrv/core-math/blob/master/src/Easing.ts#L77)*
+
+Acceleration until halfway, then deceleration
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`t` | number |   |
+
+**Returns:** *number*
+
+___
+
+### `Const` easeInQuad
+
+▸ **easeInQuad**(`t`: number): *number*
+
+*Defined in [Easing.ts:11](https://github.com/sibvrv/core-math/blob/master/src/Easing.ts#L11)*
+
+Accelerating from zero velocity
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`t` | number |   |
+
+**Returns:** *number*
+
+___
+
+### `Const` easeInQuart
+
+▸ **easeInQuart**(`t`: number): *number*
+
+*Defined in [Easing.ts:47](https://github.com/sibvrv/core-math/blob/master/src/Easing.ts#L47)*
+
+Accelerating from zero velocity
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`t` | number |   |
+
+**Returns:** *number*
+
+___
+
+### `Const` easeInQuint
+
+▸ **easeInQuint**(`t`: number): *number*
+
+*Defined in [Easing.ts:65](https://github.com/sibvrv/core-math/blob/master/src/Easing.ts#L65)*
+
+Accelerating from zero velocity
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`t` | number |   |
+
+**Returns:** *number*
+
+___
+
+### `Const` easeOutCubic
+
+▸ **easeOutCubic**(`t`: number): *number*
+
+*Defined in [Easing.ts:35](https://github.com/sibvrv/core-math/blob/master/src/Easing.ts#L35)*
+
+Decelerating to zero velocity
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`t` | number |   |
+
+**Returns:** *number*
+
+___
+
+### `Const` easeOutQuad
+
+▸ **easeOutQuad**(`t`: number): *number*
+
+*Defined in [Easing.ts:17](https://github.com/sibvrv/core-math/blob/master/src/Easing.ts#L17)*
+
+Decelerating to zero velocity
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`t` | number |   |
+
+**Returns:** *number*
+
+___
+
+### `Const` easeOutQuart
+
+▸ **easeOutQuart**(`t`: number): *number*
+
+*Defined in [Easing.ts:53](https://github.com/sibvrv/core-math/blob/master/src/Easing.ts#L53)*
+
+Decelerating to zero velocity
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`t` | number |   |
+
+**Returns:** *number*
+
+___
+
+### `Const` easeOutQuint
+
+▸ **easeOutQuint**(`t`: number): *number*
+
+*Defined in [Easing.ts:71](https://github.com/sibvrv/core-math/blob/master/src/Easing.ts#L71)*
+
+Decelerating to zero velocity
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`t` | number |   |
+
+**Returns:** *number*
+
+___
+
 ### `Const` floorPowerOfTwo
 
 ▸ **floorPowerOfTwo**(`value`: number): *number*
@@ -332,6 +561,24 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `x` | number | - |
 `y` | number | - |
+`t` | number |   |
+
+**Returns:** *number*
+
+___
+
+### `Const` linear
+
+▸ **linear**(`t`: number): *number*
+
+*Defined in [Easing.ts:5](https://github.com/sibvrv/core-math/blob/master/src/Easing.ts#L5)*
+
+No easing, no acceleration
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
 `t` | number |   |
 
 **Returns:** *number*

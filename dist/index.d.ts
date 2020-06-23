@@ -25,4 +25,5 @@ export * from './ShapeUtils';
 export * from './AABB2';
 export * from './OBB2';
 export * from './Intersection/LineLineIntersection';
+export * from './Easing';
 //# sourceMappingURL=index.d.ts.map
